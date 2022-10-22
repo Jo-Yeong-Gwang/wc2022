@@ -12,12 +12,12 @@ function sum(a) {
   }
   return total
 }
+time1 = new Date();
 d=sum(100000000)
+time2 = new Date();
+time = (time2 - time1)
 document.write("<h1>" + d + "</h1>")
-let start = new Date();
-sum(a);
-let end = new Date();
-document.write(let end - let start);	
+document.write("<h1>" + time + "ms </h1>");	
 </script>
 </body>
 </html>
